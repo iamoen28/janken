@@ -4,7 +4,7 @@ function getComputerChoice(){
     return janken[random];
 }
 
-function getPlayerSelection(player,computer){
+function playRound(player,computer){
     let result;
 
     switch(player){
@@ -40,7 +40,7 @@ function getPlayerSelection(player,computer){
 }
 
 
-let player = prompt("Janken....");
-let computer = getComputerChoice();
+let playerSelection = prompt("Janken....");
+let computerSelection = getComputerChoice();
 
-console.log(getPlayerSelection(player, computer));
+console.log(playRound(playerSelection, computerSelection));
