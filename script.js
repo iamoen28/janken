@@ -12,7 +12,7 @@ function getPlayerSelection(player,computer){
             if(computer=="Rock"){
                 result = "You LOSE! Rock beats Scissors";
             }else if(computer=="Paper"){
-                result = "You WIN! Rock beats Scissors";
+                result = "You WIN! Scissors beats Paper";
             }else{
                 result = "It's a DRAW! Both Scissors";
             }
