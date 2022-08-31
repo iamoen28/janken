@@ -39,8 +39,12 @@ function playRound(player,computer){
     return result;
 }
 
+function game(){
+    for (let i = 0; i < 5; i++) {
+        let playerSelection = prompt("Janken....");
+        let computerSelection = getComputerChoice();
+        console.log(playRound(playerSelection,computerSelection));
+    }
+}
 
-let playerSelection = prompt("Janken....");
-let computerSelection = getComputerChoice();
-
-console.log(playRound(playerSelection, computerSelection));
+game();
