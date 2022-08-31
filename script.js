@@ -1,5 +1,5 @@
 function getComputerChoice(){
-    let janken = ["Rock", "Paper", "Scissors"];
+    let janken = ["ROCK", "PAPER", "SCISSORS"];
     let random = Math.floor(Math.random()*3);
     return janken[random];
 }
@@ -7,33 +7,36 @@ function getComputerChoice(){
 function playRound(player,computer){
     let result;
 
-    switch(player){
-        case "Scissors":
-            if(computer=="Rock"){
+    switch(player.toUpperCase()){
+        case "SCISSORS":
+            if(computer=="ROCK"){
                 result = "You LOSE! Rock beats Scissors";
-            }else if(computer=="Paper"){
+            }else if(computer=="PAPER"){
                 result = "You WIN! Scissors beats Paper";
             }else{
                 result = "It's a DRAW! Both Scissors";
             }
             break;
-        case "Paper":
-            if(computer=="Rock"){
+        case "PAPER":
+            if(computer=="ROCK"){
                 result = "You WIN! Paper beats Rock";
-            }else if(computer=="Scissors"){
+            }else if(computer=="SCISSORS"){
                 result = "You LOSE! Scissors beats Paper";
             }else{
                 result = "It's a DRAW! Both Paper";
             }
             break;
-        case "Rock":
-            if(computer=="Paper"){
+        case "ROCK":
+            if(computer=="PAPER"){
                 result = "You LOSE! Paper beats Rock";
-            }else if(computer=="Scissors"){
+            }else if(computer=="SCISSORS"){
                 result = "You WIN! Rock beats Scissors";
             }else{
                 result = "It's a DRAW! Both Rock";
             }
+            break;
+        default:
+            result = "Ooops that's Invalid";
             break;
     }
     return result;
