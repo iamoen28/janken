@@ -1,5 +1,3 @@
-# Rock Paper Scissors Project
+# Rock Paper Scissors Game
 
-
-About the project
 A simple Rock Paper Scissors game from The Odin Project Curriculum.
