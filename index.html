@@ -8,6 +8,29 @@
     <script src="script.js" defer></script>
 </head>
 <body>
-    
+    <div id="scoreboard">
+        <h1 class="title">Janken (じゃん拳)</h1>
+        <h2>The rock-paper-scissors game</h2>
+
+        <p class="intro">The first to get 5 points WINS</p>
+    <div class="score-container">
+        <table>
+            <tr>
+                <th>You</th>
+                <th>Computer</th>
+            </tr>
+            <tr>
+                <td id="youScore">0</td>
+                <td id="compScore">0</td>
+            </tr>
+        </table>
+    </div>
+        <p id="matchResult"></p>
+    </div>
+    <div id="choices">
+        <button id="rock" onclick="click_result(this.id)">Rock</button>
+        <button id="paper" onclick="click_result(this.id)">Paper</button>
+        <button id="scissors" onclick="click_result(this.id)">Scissors</button>
+    </div>
 </body>
 </html>
